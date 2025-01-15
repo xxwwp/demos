@@ -24,7 +24,6 @@ export function SortableItem(props: { id: UniqueIdentifier; active: boolean; act
         {...listeners}
         className={classNames(
           "w-[100px] h-[100px] text-yellow-50 grid place-content-center border border-solid border-white relative",
-          // props.activeIndex === index && "bg-red-400"
           !isDragging && "bg-red-400"
         )}
       >
@@ -43,12 +42,6 @@ export function SortableItem(props: { id: UniqueIdentifier; active: boolean; act
               : "hidden"
           )}
         ></div>
-
-        {/* {over?.id === props.id //
-        ? index > props.activeIndex
-          ? "after"
-          : "before"
-        : undefined} */}
       </div>
     </div>
   );
